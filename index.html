@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-card">
+        <h1>Bill Calculator</h1>
+        
+        <form id="bill-form">
+            <div class="input-group">
+                <label for="tb1">Total Bill ($)</label>
+                <input type="number" step="0.01" placeholder="e.g. 120.00" id="tb1" required>
+            </div>
+
+            <div class="input-group">
+                <label for="bp1">Tip / Tax Percentage (%)</label>
+                <input type="number" step="0.1" placeholder="e.g. 15" id="bp1" required>
+            </div>
+
+            <div class="input-group">
+                <label for="np1">Number of People</label>
+                <input type="number" min="1" placeholder="e.g. 3" id="np1" required>
+            </div>
+
+            <button type="submit" id="calc-btn">Calculate Split</button>
+        </form>
+
+        <div id="result-box" class="result-container hidden">
+            <p class="result-title">Amount Per Person</p>
+            <h2 id="result-amount">$0.00</h2>
+        </div>
+    </div>
+   <!-- Footer Copyright -->
+    <footer class="app-footer">
+        <p>&copy; 2026 <strong>AURA CRAFT LABS LIMITED</strong>. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
